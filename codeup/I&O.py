@@ -1,4 +1,7 @@
 
+
+
+
 #19
 #1차원 배열 초기화 [0 for i in range(19)]
 #2차원 배열 초기화 [[0 for col in range(19)] for row in range(19)]

@@ -1,5 +1,10 @@
+a = []
+for i in range(2):
+    b = list(map(int, input()))
+    print(b)
+    a.append(b[i])
 
-
+print(a)
 
 
 #19

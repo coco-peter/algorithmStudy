@@ -1,11 +1,10 @@
-a = []
-for i in range(2):
-    b = list(map(int, input()))
-    print(b)
-    a.append(b[i])
-
+a = "peter"
 print(a)
-
+def test():
+    a = "coco"
+    print(a)
+test()
+print(a)
 
 #19
 #1차원 배열 초기화 [0 for i in range(19)]

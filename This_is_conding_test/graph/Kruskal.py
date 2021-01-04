@@ -59,6 +59,7 @@ for value in lineValueList:
         unionNode(parentList,value[1],value[2])
         minValue += value[0]
 
+print(parentList)
 print(minValue)
 
 

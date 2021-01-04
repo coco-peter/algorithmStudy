@@ -1,10 +1,6 @@
-a = "peter"
-print(a)
-def test():
-    a = "coco"
-    print(a)
-test()
-print(a)
+a = [(0,1)]
+
+print(a[0][1])
 
 #19
 #1차원 배열 초기화 [0 for i in range(19)]

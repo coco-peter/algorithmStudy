@@ -58,10 +58,10 @@ numberList = list(map(int, input().split()))
 #     right = [x for x in tail if x > pivot]
 #
 #     return quick_Sort(left) + [pivot] + quick_Sort(right)
-
+#
 # quick_Sort(numberList)
 # print(quick_Sort(numberList))
-
+#
 # quick_Sort_org(numberList, 0 , len(numberList) - 1)
 # print(numberList)
 

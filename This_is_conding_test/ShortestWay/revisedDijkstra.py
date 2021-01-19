@@ -37,7 +37,6 @@ start = int(input())
 
 graph = [[] for i in range(n+1)]        # 노드와 간선의 정보를 저장하는 graph
 distance = [INF] * (n+1)                # 출발 노드 기준 각 노드별 최단거리 --> 무한대로 초기화
-isVisited = [0] * (n+1)
 
 # 노드와 간선 데이터 입력 및 초기화
 for i in range(m):

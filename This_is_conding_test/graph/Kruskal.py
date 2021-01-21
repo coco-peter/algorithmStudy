@@ -43,8 +43,10 @@ def unionNode(parentList, firstNode, secondNode):
         parentList[firstNodeParent] = secondNodeParent
 
 
-for i in range(1,nodeCount+1):
+for i in range(1, nodeCount+1):
     parentList[i] = i
+
+print(parentList)
 
 for i in range(lineCount):
     firstNode, secondNode, lineValue = map(int, input().split())
@@ -55,7 +57,7 @@ lineValueList = sorted(lineValueList)
 minValue = 0
 for value in lineValueList:
 
-    if parentList[value[1]] != parentList[value[2]]:
+    if findParent(parentList,value[1]) != findParent(parentList,value[2]):
         unionNode(parentList,value[1],value[2])
         minValue += value[0]
 

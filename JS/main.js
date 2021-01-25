@@ -1,1 +1,3 @@
-console.log("HI");
+a = prompt("HI");
+
+console.log(a);

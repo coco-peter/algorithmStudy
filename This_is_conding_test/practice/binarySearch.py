@@ -1,19 +1,14 @@
-
 # 5
 # 8 3 7 9 2
 # 3
 # 5 7 9
 
 
-
 N = int(input())
-productList = list(map(int, input().split()))
+numList = list(map(int, input().split()))
+numList = sorted(numList)
 
-M = int(input())
-requestList = list(map(int, input().split()))
-
-
-def binarySearch(array, target, start, end):
+def binarySearch(array, start, end, target):
 
     if start > end:
         return None
@@ -21,17 +16,18 @@ def binarySearch(array, target, start, end):
     mid = (start + end) // 2
 
     if array[mid] == target:
-        return mid
-    elif array[mid] > target:
-        return binarySearch(array,target,start,mid-1)
+        return array[mid]
+    elif array[mid] < target:
+        return binarySearch(array, mid + 1, end, target)
     else:
-        return binarySearch(array,target,mid+1,end)
+        return binarySearch(array, start, mid -1, target)
 
-for k in requestList:
-    isThereTarget = binarySearch(productList,k,0,len(productList)-1)
-    if isThereTarget == None:
-        print("NO")
+M = int(input())
+findList = list(map(int,input().split()))
+isStock = None
+for i in findList:
+    isStock = binarySearch(numList,0,len(numList),i)
+    if isStock == None:
+        print("없어")
     else:
-        print("Yes")
-
-
+        print("있어")

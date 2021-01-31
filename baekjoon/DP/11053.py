@@ -14,4 +14,4 @@ for i in range(N):
     dp[i] += 1
 
 
-print(dp[N-1])
+print(max(dp))

@@ -13,4 +13,3 @@ numList = list(map(int, input().split()))
 # 퀵 정렬 개선
 
 # 계차수열
-

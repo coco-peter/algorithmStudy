@@ -16,15 +16,17 @@ from collections import deque
 
 N, M = map(int, input().split())
 
-mapArray = [[0 for cols in range(M)] for rows in range(N)]
-for i in range(0,N):
-    mapArray[i][:] = map(int, input().split())
+# mapArray = [[0 for cols in range(M)] for rows in range(N)]
+# for i in range(0,N):
+#     mapArray[i][:] = map(int, input().split())
 
 # split은 구분을 나누어서 입력을 받는거다.
 # 따라서 구분이 없는 데이터를 입력받으려면 아래와 같이 사용하자.
-# mapArray = []
-# for i in range(0,N):
-#     mapArray.append(list(map(int, input())))
+mapArray = []
+for i in range(0,N):
+    mapArray.append(list(map(int, input())))
+
+print(mapArray)
 
 # 다시 생각해보면 굳이 방무여부를 판단하는 배열을 굳이 안만들어도 되는 경우가 있으니 잘 판단해서 코드를 작성하자.
 isVisited = [[0 for cols in range(M)] for rows in range(N)]

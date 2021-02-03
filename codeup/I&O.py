@@ -1,6 +1,26 @@
-a = [(0,1)]
+# 22
+# sys.setrecursionlimit(100001)
+# 재귀 허용횟수 증가
 
-print(a[0][1])
+
+# 21
+
+# mapArray = [[0 for cols in range(M)] for rows in range(N)]
+# for i in range(0,N):
+#     mapArray[i][:] = map(int, input().split())
+
+# split은 구분을 나누어서 입력을 받는거다.
+# 따라서 구분이 없는 데이터를 입력받으려면 아래와 같이 사용하자.
+# sys.stdin.readline을 사용하면 input().strip()까지 사용해야한다 !!
+
+# mapArray = []
+# for i in range(0,N):
+#     mapArray.append(list(map(int, input())))
+
+# 20
+# a = [(0,1)]
+#
+# print(a[0][1])
 
 #19
 #1차원 배열 초기화 [0 for i in range(19)]

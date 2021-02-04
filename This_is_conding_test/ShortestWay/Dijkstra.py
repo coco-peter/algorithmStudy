@@ -39,6 +39,12 @@ for i in range(m):
     startNode, endNode, value = map(int, input().split())
     graph[startNode].append((endNode,value))
 
+print(graph)
+
+for j in graph[1]:
+    print(j, j[0], j[1])
+
+print("")
 def checkShortestNode():
     minValue = int(1e9)
     minIndex = 0
@@ -55,6 +61,7 @@ def Dijkstra(startNode):
     isVisited[startNode] = True             # 방문했다.
 
     for j in graph[startNode]:              # 첫 노드에 연결되있는 노드 중에서
+        print(j, j[0], j[1])
         distance[j[0]] = j[1]               # distance 초기화 얘는 굳이 INF와 비교 하지 않아도 됨. 어차피 연결되 있는녀석들은 INF보다 작을 거니까
 
     for i in range(n-1):

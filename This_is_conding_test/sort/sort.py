@@ -21,29 +21,30 @@ numberList = list(map(int, input().split()))
 #             break
 
 # quick sort
-# def quick_Sort_org(array, start, end):
-#
-#     if start >= end:
-#         return
-#
-#     pivot = start
-#     left = start + 1
-#     right = end
-#     while left <= right:
-#         while left <= len(array) - 1 and array[left] < array[pivot]:
-#             left += 1
-#         while right > 0 and array[right] > array[pivot]:
-#             right -= 1
-#
-#         if left > right:
-#             array[pivot], array[right] = array[right], array[pivot]
-#         else:
-#             array[left], array[right] = array[right], array[left]
-#
-#     quick_Sort_org(array, start, right - 1)
-#     quick_Sort_org(array, right + 1, end)
+def quick_Sort_org(array, start, end):
 
+    if start >= end:
+        return
 
+    pivot = start
+    left = start + 1
+    right = end
+    while left <= right:
+        while left <= len(array) - 1 and array[left] < array[pivot]:
+            left += 1
+        while right > 0 and array[right] > array[pivot]:
+            right -= 1
+
+        if left > right:
+            array[pivot], array[right] = array[right], array[pivot]
+        else:
+            array[left], array[right] = array[right], array[left]
+
+    quick_Sort_org(array, start, right - 1)
+    quick_Sort_org(array, right + 1, end)
+
+quick_Sort_org(numberList,0, len(numberList) - 1)
+print(numberList)
 
 # quick sort_simple
 # def quick_Sort(array):

@@ -1,3 +1,7 @@
+# 23
+# scoreNname = sorted(scoreNname, key = lambda x : (-x[1], x[2], -x[3], x[0] ))
+
+
 # 22
 # sys.setrecursionlimit(100001)
 # 재귀 허용횟수 증가

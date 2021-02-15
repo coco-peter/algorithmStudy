@@ -5,7 +5,7 @@ N = int(input())
 numList = list(map(int, input().split()))
 dp = [0] * N
 
-dp[0] = numList[0];
+dp[0] = numList[0]
 
 for i in range(N):
     temp = []

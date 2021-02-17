@@ -16,6 +16,7 @@ for i in range(N):
         dp[i] = numList[i]
     else:
         dp[i] = max(temp) + numList[i]
+    print(numList[i], temp)
 print(dp)
 print(max(dp))
 

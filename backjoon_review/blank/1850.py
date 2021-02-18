@@ -9,9 +9,6 @@ def gcd(x,y):
         return x
     return gcd(y,x % y)
 
-def lcm(x,y):
-    return x * y // gcd(x,y)
 
-
-print(gcd(A,B))
-print(lcm(A,B))
+for i in range(gcd(A,B)):
+    print("1", end="")

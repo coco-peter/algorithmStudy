@@ -2,6 +2,7 @@
 # 1 2 3 8 7 4 5 6
 
 
+from collections import deque
 
 graph = [[],
          [2,3,8],
@@ -15,6 +16,5 @@ graph = [[],
 
 
 isVisited = [False] * 9
-
 
 bfs(graph, 1, isVisited)

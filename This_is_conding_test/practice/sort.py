@@ -5,8 +5,8 @@
 numList = list(map(int, input().split()))
 
 # 선택정렬
-# for i in range(len(numList)):
-#     for j in range(i,len(numList)):
+# for i in range(0, len(numList)):
+#     for j in range(i, len(numList)):
 #         if numList[i] > numList[j]:
 #             numList[i], numList[j] = numList[j], numList[i]
 #
@@ -14,18 +14,14 @@ numList = list(map(int, input().split()))
 
 
 # 삽입정렬
-
-for i in range(len(numList)-1 , -1, -1):
+for i in range(0, len(numList)):
     for j in range(i, -1, -1):
         if numList[i] < numList[j]:
             numList[i], numList[j] = numList[j], numList[i]
 
 print(numList)
 
-
 # 퀵 정렬
-
-def quicksort()
 
 
 # 퀵 정렬 개선

@@ -1,4 +1,25 @@
-<script>
-  a = prompt("입력하세요 :");
-  console.log(a);
-</script>
+<html>
+  <head>
+    <style>
+      .boxes > div {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+      }
+      .boxes > :nth-last-child(1) {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

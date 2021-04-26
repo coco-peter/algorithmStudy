@@ -1,16 +1,11 @@
+("use strict");
+
 const fs = require("fs");
 const stdin = (process.platform === "linux"
   ? fs.readFileSync("/dev/stdin").toString()
-  : `5
-1 1
-2 3
-3 4
-9 8
-5 2
+  : `2
 `
 ).split("\n");
-
-console.log(stdin);
 
 const input = (() => {
   let line = 0;
@@ -18,7 +13,7 @@ const input = (() => {
 })();
 
 let t = input();
-while (t--) {
-  const [a, b] = input().split(" ").map(Number);
-  console.log(a + b);
+
+for (let i = 1; i < 10; i++) {
+  console.log(`${t} * ${i} = ${t * i}`);
 }

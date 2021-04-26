@@ -18,7 +18,7 @@
 # 5 6
 # 6 4
 
-
+# 03/28 위상정렬 복습
 from collections import deque
 
 nodeCount, lineCount = map(int, input().split())

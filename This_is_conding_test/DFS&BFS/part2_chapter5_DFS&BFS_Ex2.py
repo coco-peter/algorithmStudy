@@ -16,6 +16,7 @@ from collections import deque
 
 N, M = map(int, input().split())
 
+
 # mapArray = [[0 for cols in range(M)] for rows in range(N)]
 # for i in range(0,N):
 #     mapArray[i][:] = map(int, input().split())

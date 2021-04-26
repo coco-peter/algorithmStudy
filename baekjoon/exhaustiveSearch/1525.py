@@ -1,9 +1,14 @@
+
+
+# 3/22 백준 1525 복습
+
 import sys
 from collections import deque
 
 input = sys.stdin.readline
 
 targetGraph = [[1,2,3], [4,5,6],[7,8,0]]
+
 
 # 이제 이런식으로 코드를 짜자
 # graph = [list(map(int,input().split())) for _ in range(3)]

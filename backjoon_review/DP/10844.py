@@ -17,4 +17,5 @@ for y in range(1,100):
             dp[y+1][x+1] += dp[y][x]
 
 # print(dp)
+print(dp[N][:])
 print((sum(dp[N][1:])) % 1000000000)

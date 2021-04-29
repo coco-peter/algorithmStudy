@@ -30,4 +30,5 @@ for i in range(N-1):
 
     # print(numList[i], cnt, preCnt)
 
+print(numList)
 print(maxNum)

@@ -16,6 +16,7 @@ def printStar(x, y, size):
     for yy in range(3):
         for xx in range(3):
             if yy != 1 or xx != 1:
+                print(x + xx * nextSize, y + yy * nextSize, nextSize)
                 printStar(x + xx * nextSize, y + yy * nextSize, nextSize)
 
     # print(size // 3, size // 3 * 2)

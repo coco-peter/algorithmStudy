@@ -1,0 +1,18 @@
+
+// 두가지 이상의 조건일때는 아래와같이 사용할것.
+timeTable.sort((a, b) => a[1] - b[1] || a[0] - b[0]);
+
+// 한가지 조건일때 아래와같이 정렬기능 사용
+plusArr.sort((a, b) => b - a);
+
+// 한 배열안에 두가지 이상 정보가 필요할때는 []로 묶어서 사용
+timeTable.push([start, end]);
+
+// console.log는 개행이 동반된다... 저기서 개행만 없애는 방법은 아직 못찾음 일단은 저렇게 쓰거나
+// 혹은 a = "" 같은 걸 만들어서 쓰자
+// 참고로 process 때문에 통과가 안되는게 있는것 같다..
+process.stdout.write(String(starArr[y][x]));
+
+// 배열이 아니고 그냥 문자열일때는 find이런게 안먹히는듯...
+// 정렬같은기능도 마찬가지.
+// if (N.find((e) => e === 0) === undefined) console.log("HI");

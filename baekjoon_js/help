@@ -1,9 +1,11 @@
 
+
+// sort 조건
+// 한가지 조건일때 아래와같이 정렬기능 사용
+plusArr.sort((a, b) => b - a);
 // 두가지 이상의 조건일때는 아래와같이 사용할것.
 timeTable.sort((a, b) => a[1] - b[1] || a[0] - b[0]);
 
-// 한가지 조건일때 아래와같이 정렬기능 사용
-plusArr.sort((a, b) => b - a);
 
 // 한 배열안에 두가지 이상 정보가 필요할때는 []로 묶어서 사용
 timeTable.push([start, end]);
@@ -16,3 +18,17 @@ process.stdout.write(String(starArr[y][x]));
 // 배열이 아니고 그냥 문자열일때는 find이런게 안먹히는듯...
 // 정렬같은기능도 마찬가지.
 // if (N.find((e) => e === 0) === undefined) console.log("HI");
+
+
+// slice로 파이썬의 i[1:] 이런걸 구현할수 있다.
+// 그리고 String으로 변수를 받은다음, replace로 해야 바뀐다.. 그냥 접근해서 넣으면 안바뀜..
+let i = "1923";
+console.log(i.slice(0, 2) + i.slice(2, 4));
+let j = String(i);
+j = j.replace(j[0], "2");
+
+
+// 2차배열 선언
+let graph = Array(R)
+  .fill("")
+  .map(() => Array(C).fill(""));

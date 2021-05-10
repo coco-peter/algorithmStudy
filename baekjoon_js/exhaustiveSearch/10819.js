@@ -33,6 +33,7 @@ function setMaxValue() {
   maxValue = Math.max(maxValue, ans);
 }
 
+// 순열
 function DFS(start) {
   if (start === numList.length) {
     setMaxValue();
